@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
 int main()
@@ -12,7 +13,7 @@ int main()
     cin>>edges;
 
  
-    int AdJMatrix[5][5] = {0};
+    vector<vector<int>> AdJMatrix(vertex,vector<int>(vertex,0));
 
     int u , v, weight;
 
